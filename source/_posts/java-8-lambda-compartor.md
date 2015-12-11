@@ -7,7 +7,7 @@ tags:
 在这个例子中，我们将向您展示如何使用Java 8 Lambda表达式写一个Comparator排序列表。
 
 
-### 1.首先来看一个例子：
+### 首先来看一个例子：
 
 ``` java
 Comparator<Developer> byName = new Comparator<Developer>() {
@@ -20,7 +20,7 @@ Comparator<Developer> byName = new Comparator<Developer>() {
 
 
 
-### 2. Lambda 方式实现
+### Lambda 方式实现
 
 ``` java
 Comparator<Developer> byName = (Developer o1, Developer o2)->o1.getName().compareTo(o2.getName());
@@ -120,7 +120,7 @@ Collections.sort(listDevs, new Comparator&lt;Developer&gt;() {
 });
 ```
 没错，它能很好的工作，但是想一想我们为了一行代码的改变而去重新实现一个类！
-### 3.Java 8?Lambda
+### Java 8?Lambda
 在Java 8 中 List 接口已经直接支持了sort方法，不在需要Collections.sort了
 
 ``` java
@@ -191,8 +191,8 @@ Developer [name=mkyong, salary=70000, age=33]
 Developer [name=iris, salary=170000, age=55]
 ```
 
-### 4.看看其他的Lambda例子
-#### 4.1按照年龄排序
+### 看看其他的Lambda例子
+#### 按照年龄排序
 ```java
 //sort by age
 Collections.sort(listDevs, new Comparator&lt;Developer&gt;() {
@@ -209,7 +209,7 @@ listDevs.sort((Developer o1, Developer o2)-&gt;o1.getAge()-o2.getAge());
 listDevs.sort((o1, o2)-&gt;o1.getAge()-o2.getAge());
 ```
 
-#### 4.2 按照名字排序
+#### 按照名字排序
 ```java
 //sort by name
   Collections.sort(listDevs, new Comparator&lt;Developer&gt;() {
@@ -226,7 +226,7 @@ listDevs.sort((o1, o2)-&gt;o1.getAge()-o2.getAge());
   listDevs.sort((o1, o2)-&gt;o1.getName().compareTo(o2.getName()));
 ```
 
-#### 4.3 按照工资排序
+#### 按照工资排序
 ```java
 //sort by salary
 Collections.sort(listDevs, new Comparator&lt;Developer&gt;() {
@@ -243,7 +243,7 @@ listDevs.sort((Developer o1, Developer o2)-&gt;o1.getSalary().compareTo(o2.getSa
 listDevs.sort((o1, o2)-&gt;o1.getSalary().compareTo(o2.getSalary()));
 ```
 
-#### 4.4 反向排序
+#### 反向排序
 Lambda 根据工资降序
 ```java
 Comparator&lt;Developer&gt; salaryComparator = (o1, o2)-&gt;o1.getSalary().compareTo(o2.getSalary());
