@@ -1,4 +1,8 @@
-JAVA 8 LAMBDA  COMPARATOR 例子
+title: JAVA 8 LAMBDA COMPARATOR 例子
+date: 2015-12-11 14:17:28
+tags:
+- java8
+- lambda
 ---
 在这个例子中，我们将向您展示如何使用Java 8 Lambda表达式写一个Comparator排序列表。
 
