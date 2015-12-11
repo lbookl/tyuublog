@@ -49,7 +49,7 @@ open_in_new: false
 
 # Miscellaneous
 #google_analytics: ''
-favicon: /favicon.png
+favicon: /favicon.ico
 
 #你的头像url
 avatar: /static/app.jpg
@@ -67,18 +67,18 @@ tagcloud: true
 
 #是否开启友情链接
 #不开启——
-#friends: false
+friends: false
 #开启——
-friends:
-  Hexo: https://hexo.io
-  GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
+#friends:
+#  Hexo: https://hexo.io
+#  GitHub: https://pages.github.com/
+#  MOxFIVE: http://moxfive.xyz/
 
 #是否开启“关于我”。
 #不开启——
 #aboutme: false
 #开启——
-aboutme: 专注于前端
+aboutme: 程序员一枚！
 
 #是否显示边栏中的搜索框 
 #Search Box in left column
